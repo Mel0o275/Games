@@ -149,3 +149,10 @@ nav {
         transform: rotate(360deg);
     }
 }
+
+@media (max-width:768px) {
+    .nav-link a,
+    .nav-item a {
+        margin-left: 10px !important;
+    }
+}
