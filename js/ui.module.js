@@ -3,7 +3,7 @@ export class Ui {
         let cartona = ``;
         for (let i = 0; i < game.length; i++) {
             cartona += `
-            <div class="col-md-3 mb-4" id="press">
+            <div class="col-md-6 col-lg-3 mb-4" id="press">
                 <div class="card outer border-1 border border-dark rounded-3" data-id="${game[i].id}">
                     <div class="inner p-3">
                         <img src="${game[i].thumbnail}" alt="" class="card-img-top" style="max-width: -webkit-fill-available;">
