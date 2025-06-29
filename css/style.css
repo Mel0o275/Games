@@ -1,0 +1,151 @@
+body {
+    background-color: #272b30;
+    font-family: "Comfortaa", cursive;
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+nav {
+    background-color: rgb(58, 73, 123) !important;
+    border-radius: 20px;
+    margin: auto;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    z-index: 100;
+}
+
+.navbar-nav {
+    font-size: 12px !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover,
+.nav-item:hover{
+    color: #007bff !important;
+}
+
+.active{
+    color: #007bff !important;
+}
+
+.inner h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inner p {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.box {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.des {
+    font-size: 14px;
+    color: gray;
+}
+
+.box {
+    margin-top: 10px;
+    background-color: #007bff;
+    width: 45px;
+    height: 30px;
+    display: flex;
+}
+
+.col-md-3 {
+    filter: grayscale(0.7) !important;
+    transition: transform 0.5s, filter 0.5s 0.1s !important;
+    cursor: pointer;
+}
+
+.col-md-3:hover {
+    filter: grayscale(0) !important;
+    transform: scale(1.03);
+}
+
+.info .box {
+    background-color: #363739;
+    width: fit-content;
+    padding: 5px 5px;
+    height: 21px;
+    display: flex;
+    font-size: 12px;
+}
+
+.info h5,
+.info p{
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    top: 35px;
+    right: 90px;
+}
+
+.card {
+    background-color: #272B30 !important;
+}
+
+.overlay {
+    background-color: #272729be;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+}
+
+.loading {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+
+.loader::after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
