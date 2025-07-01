@@ -63,13 +63,13 @@ nav {
     display: flex;
 }
 
-.col-md-3 {
+.col-md-6 {
     filter: grayscale(0.7) !important;
     transition: transform 0.5s, filter 0.5s 0.1s !important;
     cursor: pointer;
 }
 
-.col-md-3:hover {
+.col-md-6:hover {
     filter: grayscale(0) !important;
     transform: scale(1.03);
 }
